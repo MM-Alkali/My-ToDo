@@ -1,0 +1,142 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.container {
+  margin: 10px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 576px) {
+  .container {
+    width: 400px;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    width: 90%;
+  }
+}
+
+.my-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.my-form input[type="text"] {
+  width: 95%;
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.my-form button {
+  max-width: fit-content;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+li:hover {
+  background-color: #f2f2f2;
+}
+
+li label {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+li input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+li .checkbox-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li .completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+li p.description {
+  margin-top: 5px;
+  font-size: 14px;
+  color: cadetblue;
+}
+
+li .actions {
+  display: flex;
+  align-items: center;
+}
+
+li .actions button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+li .actions button:hover {
+  color: red;
+}
